@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Byrd's Eye | Photographer & Filmmaker, New Orleans</title>
+  <meta name="description" content="Byrd's Eye: portraits, street and culture photography and film from New Orleans. Don't take it personally.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">Byrd's Eye <span aria-hidden="true">🦅</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav id="nav-links" class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#film">Film</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Book a shoot</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media" data-hero></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Photographer &middot; Filmmaker &middot; New Orleans</p>
+        <h1>Don't take it<br><span>personally.</span></h1>
+        <p class="hero-sub">Portraits, street and culture, caught from a Byrd's eye view.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">See the work</a>
+          <a class="btn btn-ghost" href="#contact">Book a shoot</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Selected work</p>
+        <h2>Shots</h2>
+      </div>
+      <div class="filters" role="tablist" aria-label="Filter work">
+        <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter" data-filter="portraits" role="tab" aria-selected="false">Portraits</button>
+        <button class="filter" data-filter="culture" role="tab" aria-selected="false">Culture &amp; second lines</button>
+        <button class="filter" data-filter="street" role="tab" aria-selected="false">Street</button>
+        <button class="filter" data-filter="events" role="tab" aria-selected="false">Events</button>
+      </div>
+      <div class="grid" data-gallery></div>
+    </section>
+
+    <section class="band">
+      <p>Jazz Fest <span>&bull;</span> Super Sunday <span>&bull;</span> Second lines <span>&bull;</span> Portraits <span>&bull;</span> Slow motion <span>&bull;</span> 11:11 🧿</p>
+    </section>
+
+    <section id="film" class="section film">
+      <div class="section-head">
+        <p class="eyebrow">I am a filmmaker</p>
+        <h2>Film</h2>
+      </div>
+      <div class="film-grid">
+        <article class="film-card film-feature">
+          <div class="film-frame" data-video="">
+            <span class="play" aria-hidden="true">&#9654;</span>
+            <span class="film-label">Documentary</span>
+          </div>
+          <div class="film-body">
+            <h3>It All Makes Sense</h3>
+            <p>A documentary in progress. Follow along on Instagram at
+              <a href="https://www.instagram.com/itallmakesensedoc/" target="_blank" rel="noopener">@itallmakesensedoc</a>.</p>
+          </div>
+        </article>
+        <article class="film-card">
+          <div class="film-frame" data-video="">
+            <span class="play" aria-hidden="true">&#9654;</span>
+            <span class="film-label">Slow motion</span>
+          </div>
+          <div class="film-body">
+            <h3>Slow Motion</h3>
+            <p>Moments stretched out: dancers, crowds and the city in motion.</p>
+          </div>
+        </article>
+        <article class="film-card">
+          <div class="film-frame" data-video="">
+            <span class="play" aria-hidden="true">&#9654;</span>
+            <span class="film-label">Event recap</span>
+          </div>
+          <div class="film-body">
+            <h3>Jazz Fest</h3>
+            <p>Music, color and the people who make the festival what it is.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-photo" data-about></div>
+      <div class="about-copy">
+        <p class="eyebrow">About</p>
+        <h2>Don't take me seriously. I do this for fun.</h2>
+        <p>Byrd's Eye is a New Orleans photographer and filmmaker shooting the people and culture of the city: portraits with character, street scenes after dark, Mardi Gras Indians on Super Sunday, and the energy of Jazz Fest and second lines.</p>
+        <p>Every frame starts with the person in front of the lens. No stiff poses, just real moments with a cinematic edge.</p>
+        <ul class="services">
+          <li>Portrait sessions</li>
+          <li>Events &amp; festivals</li>
+          <li>Music &amp; artist content</li>
+          <li>Short film &amp; documentary</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head">
+        <p class="eyebrow">Let's work</p>
+        <h2>Book a shoot</h2>
+        <p class="lede">Tell me what you have in mind. The fastest way to reach me is a DM on Instagram.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" data-contact>
+          <label>Name<input name="name" required autocomplete="name"></label>
+          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+          <label>What are we shooting?
+            <select name="type">
+              <option>Portrait session</option>
+              <option>Event</option>
+              <option>Music / artist content</option>
+              <option>Film project</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label>Details<textarea name="message" rows="4" placeholder="Date, location, vibe..."></textarea></label>
+          <button class="btn btn-primary" type="submit">Send request</button>
+          <p class="form-note" data-form-note></p>
+        </form>
+        <div class="contact-side">
+          <a class="ig-card" href="https://www.instagram.com/byrdz_eye/" target="_blank" rel="noopener">
+            <span class="ig-handle">@byrdz_eye</span>
+            <span>Follow &amp; DM on Instagram &rarr;</span>
+          </a>
+          <a class="ig-card" href="https://www.instagram.com/itallmakesensedoc/" target="_blank" rel="noopener">
+            <span class="ig-handle">@itallmakesensedoc</span>
+            <span>The documentary &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span data-year></span> Byrd's Eye 🦅 &middot; New Orleans</p>
+    <a href="https://www.instagram.com/byrdz_eye/" target="_blank" rel="noopener">Instagram</a>
+  </footer>
+
+  <div class="lightbox" data-lightbox hidden>
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+    <figure>
+      <div class="lightbox-media" data-lightbox-media></div>
+      <figcaption data-lightbox-caption></figcaption>
+    </figure>
+    <button class="lightbox-next" aria-label="Next">&#8250;</button>
+  </div>
+
+  <script src="gallery.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
