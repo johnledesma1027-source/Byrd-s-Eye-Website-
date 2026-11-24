@@ -1,8 +1,8 @@
 :root {
-  --bg: #0b0a0f;
-  --bg-2: #15131c;
+  --bg: #1e1036;
+  --bg-2: #2b1a4c;
   --text: #f3f0ea;
-  --muted: #a39fae;
+  --muted: #bdb1d3;
   --purple: #7b3fe4;
   --gold: #f2c14e;
   --green: #2fbf71;
@@ -40,7 +40,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: 0.01
   position: fixed; inset: 0 0 auto; z-index: 20;
   display: flex; align-items: center; justify-content: space-between;
   padding: 1rem clamp(1rem, 4vw, 3rem);
-  background: linear-gradient(to bottom, rgba(11,10,15,0.9), rgba(11,10,15,0));
+  background: linear-gradient(to bottom, rgba(30,16,54,0.9), rgba(30,16,54,0));
 }
 .brand { font-family: "Monoton", var(--display); font-size: 1.6rem; letter-spacing: 0.04em; word-spacing: 0.35em; color: var(--gold); text-decoration: none; text-transform: uppercase; text-shadow: 0 0 12px rgba(242, 193, 78, 0.45); }
 .nav-links { display: flex; gap: 1.75rem; align-items: center; }
@@ -76,7 +76,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: 0.01
     var(--bg);
 }
 .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
-.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, var(--bg) 2%, rgba(11,10,15,0.4) 40%, rgba(11,10,15,0.25)), linear-gradient(to right, rgba(11,10,15,0.65), rgba(11,10,15,0) 65%); }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, var(--bg) 2%, rgba(30,16,54,0.4) 40%, rgba(30,16,54,0.25)), linear-gradient(to right, rgba(30,16,54,0.65), rgba(30,16,54,0) 65%); }
 .hero-content { text-shadow: 0 2px 18px rgba(0, 0, 0, 0.6);
   position: relative; padding: 0 clamp(1rem, 4vw, 3rem) clamp(3rem, 10vh, 6rem); max-width: 900px; }
 .hero h1 { font-size: clamp(3.5rem, 12vw, 9rem); }
@@ -128,8 +128,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: 0.01
 .film-grid { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: auto auto; gap: 1.25rem; }
 .film-feature { grid-row: span 2; }
 .film-card { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
-.film-frame { position: relative; aspect-ratio: 16 / 9; display: grid; place-items: center; background: radial-gradient(circle at 50% 40%, rgba(123,63,228,0.45), transparent 60%), #0f0d15; }
-.film-frame.has-poster { background: linear-gradient(rgba(11,10,15,0.3), rgba(11,10,15,0.6)), var(--poster) center / cover no-repeat; }
+.film-frame { position: relative; aspect-ratio: 16 / 9; display: grid; place-items: center; background: radial-gradient(circle at 50% 40%, rgba(123,63,228,0.45), transparent 60%), #24133f; }
+.film-frame.has-poster { background: linear-gradient(rgba(30,16,54,0.3), rgba(30,16,54,0.6)), var(--poster) center / cover no-repeat; }
 .film-feature .film-frame { aspect-ratio: auto; flex: 1; min-height: 320px; }
 .play { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: var(--gold); color: var(--bg); font-size: 1.25rem; padding-left: 4px; }
 .film-label { position: absolute; top: 1rem; left: 1rem; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; background: rgba(0,0,0,0.5); padding: 0.3rem 0.6rem; border-radius: 999px; }
@@ -166,7 +166,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: 0.01
 .footer a { color: var(--gold); text-decoration: none; }
 
 /* Lightbox */
-.lightbox { position: fixed; inset: 0; z-index: 50; background: rgba(5,4,8,0.95); display: grid; grid-template-columns: auto 1fr auto; align-items: center; padding: 1rem; }
+.lightbox { position: fixed; inset: 0; z-index: 50; background: rgba(18,9,34,0.96); display: grid; grid-template-columns: auto 1fr auto; align-items: center; padding: 1rem; }
 .lightbox[hidden] { display: none; }
 .lightbox figure { margin: 0; display: grid; justify-items: center; gap: 0.75rem; }
 .lightbox-media { width: min(90vw, 900px); height: min(80vh, 900px); border-radius: var(--radius); overflow: hidden; display: grid; place-items: center; }
