@@ -17,7 +17,11 @@
 
   // Hero and about images
   const hero = document.querySelector("[data-hero]");
-  if (hero) fillMedia(hero, data.hero, "");
+  if (hero) {
+    fillMedia(hero, data.hero, "");
+    const heroImg = hero.querySelector("img");
+    if (heroImg) heroImg.loading = "eager";
+  }
   const about = document.querySelector("[data-about]");
   if (about) fillMedia(about, data.about, "Deshaun Frye behind the camera");
 
@@ -28,7 +32,7 @@
     tile.dataset.category = item.category;
     tile.dataset.index = i;
     tile.setAttribute("aria-label", "Open " + item.title);
-    fillMedia(tile, item.src, item.title);
+    fillMedia(tile, item.img ? "images/thumbs/" + item.img : "", item.title);
     tile.style.setProperty("--hue", (i * 47) % 360);
     const cap = document.createElement("span");
     cap.className = "tile-cap";
@@ -67,7 +71,7 @@
     const item = data.gallery[index];
     lbMedia.innerHTML = "";
     lbMedia.className = "lightbox-media";
-    fillMedia(lbMedia, item.src, item.title);
+    fillMedia(lbMedia, item.img ? "images/" + item.img : "", item.title);
     lbMedia.style.setProperty("--hue", (index * 47) % 360);
     lbCap.textContent = item.title + " · " + (labels[item.category] || "");
     lb.hidden = false;

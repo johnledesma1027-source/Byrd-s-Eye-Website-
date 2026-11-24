@@ -75,7 +75,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: 0.01
     radial-gradient(ellipse at 90% 90%, rgba(242,193,78,0.25), transparent 45%),
     var(--bg);
 }
-.hero-media img { width: 100%; height: 100%; object-fit: cover; }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: center 8%; }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, var(--bg) 5%, rgba(11,10,15,0.35) 55%, rgba(11,10,15,0.2)); }
 .hero-content { position: relative; padding: 0 clamp(1rem, 4vw, 3rem) clamp(3rem, 10vh, 6rem); max-width: 900px; }
 .hero h1 { font-size: clamp(3.5rem, 12vw, 9rem); }
@@ -129,6 +129,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: 0.01
 .film-feature { grid-row: span 2; }
 .film-card { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
 .film-frame { position: relative; aspect-ratio: 16 / 9; display: grid; place-items: center; background: radial-gradient(circle at 50% 40%, rgba(123,63,228,0.45), transparent 60%), #0f0d15; }
+.film-frame.has-poster { background: linear-gradient(rgba(11,10,15,0.3), rgba(11,10,15,0.6)), var(--poster) center / cover no-repeat; }
 .film-feature .film-frame { aspect-ratio: auto; flex: 1; min-height: 320px; }
 .play { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: var(--gold); color: var(--bg); font-size: 1.25rem; padding-left: 4px; }
 .film-label { position: absolute; top: 1rem; left: 1rem; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; background: rgba(0,0,0,0.5); padding: 0.3rem 0.6rem; border-radius: 999px; }
