@@ -23,7 +23,7 @@
     if (heroImg) heroImg.loading = "eager";
   }
   const about = document.querySelector("[data-about]");
-  if (about) fillMedia(about, data.about, "Deshaun Frye behind the camera");
+  if (about) fillMedia(about, data.about, "Deshaun Frye, the photographer behind Byrdz Eye");
 
   // Gallery
   data.gallery.forEach((item, i) => {

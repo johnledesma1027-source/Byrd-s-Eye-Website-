@@ -12,7 +12,7 @@
 */
 window.BYRDS_EYE = {
   hero: "images/hero.jpg",
-  about: "",  // a photo of Deshaun, e.g. "images/about.jpg"
+  about: "images/about.jpg", // photo of Deshaun from @deshaunfrye
   gallery: [
     { title: "Hands up", category: "portraits", shape: "tall", img: "hands-up.jpg" },
     { title: "Streetcar night", category: "street", shape: "tall", img: "streetcar-night.jpg" },
