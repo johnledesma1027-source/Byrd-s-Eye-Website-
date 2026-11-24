@@ -14,7 +14,7 @@ window.BYRDS_EYE = {
   hero: "",   // e.g. "images/hero.jpg"
   about: "",  // e.g. "images/about.jpg"
   gallery: [
-    { title: "Hands up", category: "portraits", shape: "tall", src: "" },
+    { title: "Hands up", category: "portraits", shape: "tall", src: "images/hands-up.jpg" },
     { title: "Streetcar night", category: "street", shape: "tall", src: "" },
     { title: "Locs & denim", category: "portraits", shape: "square", src: "" },
     { title: "Heritage parade", category: "culture", shape: "wide", src: "" },

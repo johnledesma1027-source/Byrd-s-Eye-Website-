@@ -1,6 +1,6 @@
-# Byrd's Eye website
+# Byrdz Eye website
 
-Portfolio site for Byrd's Eye ([@byrdz_eye](https://www.instagram.com/byrdz_eye/)), a New Orleans photographer and filmmaker.
+Portfolio site for Byrdz Eye ([@byrdz_eye](https://www.instagram.com/byrdz_eye/)), a New Orleans photographer and filmmaker.
 
 It's a plain static site (HTML, CSS and a little JavaScript), so there is nothing to install or build.
 
