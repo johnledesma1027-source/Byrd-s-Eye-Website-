@@ -31,13 +31,12 @@
     tile.className = "tile tile-" + (item.shape || "square");
     tile.dataset.category = item.category;
     tile.dataset.index = i;
-    tile.setAttribute("aria-label", "Open " + item.title);
-    fillMedia(tile, item.img ? "images/thumbs/" + item.img : "", item.title);
+    tile.setAttribute("aria-label", "Open " + (labels[item.category] || "") + " photo");
+    fillMedia(tile, item.img ? "images/thumbs/" + item.img : "", (labels[item.category] || "") + " photo by Deshaun Frye");
     tile.style.setProperty("--hue", (i * 47) % 360);
     const cap = document.createElement("span");
     cap.className = "tile-cap";
-    cap.innerHTML = "<strong></strong><em></em>";
-    cap.querySelector("strong").textContent = item.title;
+    cap.innerHTML = "<em></em>";
     cap.querySelector("em").textContent = labels[item.category] || "";
     tile.appendChild(cap);
     grid.appendChild(tile);
@@ -71,9 +70,9 @@
     const item = data.gallery[index];
     lbMedia.innerHTML = "";
     lbMedia.className = "lightbox-media";
-    fillMedia(lbMedia, item.img ? "images/" + item.img : "", item.title);
+    fillMedia(lbMedia, item.img ? "images/" + item.img : "", (labels[item.category] || "") + " photo by Deshaun Frye");
     lbMedia.style.setProperty("--hue", (index * 47) % 360);
-    lbCap.textContent = item.title + " · " + (labels[item.category] || "");
+    lbCap.textContent = labels[item.category] || "";
     lb.hidden = false;
     document.body.style.overflow = "hidden";
   }
