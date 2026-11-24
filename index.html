@@ -32,58 +32,71 @@
         <p class="hero-sub">Portraits, street and culture, caught from a Byrdz Eye view.</p>
         <div class="hero-actions">
           <a class="lens-btn" href="#work" aria-label="See the work">
-            <svg viewBox="0 0 340 76" role="img" aria-hidden="true" focusable="false">
+            <svg viewBox="0 0 364 84" role="img" aria-hidden="true" focusable="false">
               <defs>
                 <linearGradient id="lensBody" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#4a4550"/>
-                  <stop offset="0.18" stop-color="#2a2630"/>
-                  <stop offset="0.55" stop-color="#121016"/>
-                  <stop offset="0.85" stop-color="#1d1a22"/>
-                  <stop offset="1" stop-color="#3a3540"/>
+                  <stop offset="0" stop-color="#55505c"/>
+                  <stop offset="0.16" stop-color="#2b2731"/>
+                  <stop offset="0.55" stop-color="#0f0d13"/>
+                  <stop offset="0.88" stop-color="#1e1b24"/>
+                  <stop offset="1" stop-color="#3b3642"/>
                 </linearGradient>
-                <linearGradient id="lensHood" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#3d3844"/>
-                  <stop offset="0.5" stop-color="#0e0c12"/>
-                  <stop offset="1" stop-color="#2c2832"/>
+                <linearGradient id="lensSilver" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#e6e4ea"/>
+                  <stop offset="0.5" stop-color="#8f8b96"/>
+                  <stop offset="1" stop-color="#cfccd5"/>
                 </linearGradient>
                 <linearGradient id="lensGold" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0" stop-color="#fbe3a0"/>
                   <stop offset="0.5" stop-color="#f2c14e"/>
                   <stop offset="1" stop-color="#b88a1c"/>
                 </linearGradient>
-                <radialGradient id="lensGlass" cx="0.35" cy="0.3" r="0.9">
-                  <stop offset="0" stop-color="#c9a6ff"/>
-                  <stop offset="0.35" stop-color="#6b3fd6"/>
-                  <stop offset="0.75" stop-color="#1d0f3a"/>
-                  <stop offset="1" stop-color="#05030a"/>
+                <radialGradient id="lensGlass" cx="0.4" cy="0.35" r="0.85">
+                  <stop offset="0" stop-color="#d9c2ff"/>
+                  <stop offset="0.3" stop-color="#7b4fe0"/>
+                  <stop offset="0.7" stop-color="#22114a"/>
+                  <stop offset="1" stop-color="#06030c"/>
                 </radialGradient>
-                <pattern id="lensGrip" width="5" height="10" patternUnits="userSpaceOnUse">
-                  <rect width="5" height="10" fill="#151219"/>
-                  <rect width="2" height="10" fill="#2c2833"/>
+                <pattern id="lensGrip" width="4" height="10" patternUnits="userSpaceOnUse">
+                  <rect width="4" height="10" fill="#141118"/>
+                  <rect width="1.6" height="10" fill="#34303b"/>
                 </pattern>
               </defs>
-              <!-- mount -->
-              <rect x="2" y="22" width="16" height="32" rx="3" fill="#8d8a93"/>
-              <rect x="6" y="22" width="2" height="32" fill="#5d5a63"/>
-              <rect x="12" y="22" width="2" height="32" fill="#5d5a63"/>
-              <!-- barrel -->
-              <path d="M18 16 H244 L256 10 V66 L244 60 H18 Z" fill="url(#lensBody)"/>
-              <!-- grip ring -->
-              <rect x="22" y="16" width="34" height="44" fill="url(#lensGrip)"/>
+              <!-- bayonet mount -->
+              <rect x="2" y="27" width="12" height="30" rx="2" fill="url(#lensSilver)"/>
+              <rect x="0" y="31" width="3" height="6" fill="#bdb9c4"/>
+              <rect x="0" y="47" width="3" height="6" fill="#bdb9c4"/>
+              <!-- rear barrel, tapering out toward the front -->
+              <path d="M14 22 L238 16 V68 L14 62 Z" fill="url(#lensBody)"/>
+              <!-- AF / MF switch panel -->
+              <rect x="22" y="27" width="30" height="30" rx="3" fill="#1a171f" stroke="#3a3540" stroke-width="1"/>
+              <text x="37" y="37" text-anchor="middle" class="lens-tiny">AF</text>
+              <rect x="31" y="40" width="12" height="5" rx="2" fill="#bdb9c4"/>
+              <text x="37" y="53" text-anchor="middle" class="lens-tiny">MF</text>
               <!-- tripod collar and foot -->
-              <rect x="62" y="14" width="12" height="48" rx="2" fill="#2e2a34"/>
-              <rect x="64" y="60" width="8" height="8" fill="#2e2a34"/>
-              <rect x="52" y="67" width="32" height="6" rx="2" fill="#45404c"/>
+              <rect x="60" y="17" width="12" height="51" rx="2" fill="#2e2a34"/>
+              <rect x="62" y="67" width="8" height="7" fill="#2e2a34"/>
+              <rect x="50" y="73" width="32" height="6" rx="2" fill="#45404c"/>
+              <!-- name label -->
+              <text x="154" y="50" text-anchor="middle" class="lens-label">SEE THE WORK</text>
+              <!-- focus ring with distance scale -->
+              <rect x="238" y="13" width="36" height="58" rx="3" fill="url(#lensGrip)"/>
+              <rect x="238" y="13" width="36" height="58" rx="3" fill="none" stroke="#3d3844" stroke-width="1"/>
+              <g fill="#e8e4ee">
+                <rect x="241" y="15" width="1" height="4"/><rect x="249" y="15" width="1" height="3"/><rect x="257" y="15" width="1" height="4"/><rect x="265" y="15" width="1" height="3"/><rect x="272" y="15" width="1" height="4"/>
+              </g>
               <!-- gold ring -->
-              <rect x="232" y="16" width="6" height="44" fill="url(#lensGold)"/>
-              <!-- hood -->
-              <path d="M256 8 H318 a4 4 0 0 1 4 4 V64 a4 4 0 0 1 -4 4 H256 Z" fill="url(#lensHood)"/>
-              <rect x="262" y="8" width="2" height="60" fill="#3f3a46"/>
-              <!-- front glass -->
-              <ellipse cx="324" cy="38" rx="11" ry="29" fill="url(#lensGlass)"/>
-              <ellipse class="lens-glint" cx="320" cy="26" rx="3" ry="7" fill="#ffffff" opacity="0.55"/>
-              <!-- label -->
-              <text x="153" y="46" text-anchor="middle" class="lens-label">SEE THE WORK</text>
+              <rect x="276" y="13" width="5" height="58" fill="url(#lensGold)"/>
+              <!-- flared hood -->
+              <path d="M281 11 L346 3 V81 L281 73 Z" fill="url(#lensBody)"/>
+              <path d="M281 11 L346 3" stroke="#5e5866" stroke-width="1"/>
+              <rect x="338" y="3" width="8" height="78" fill="#0b090e"/>
+              <!-- front glass elements -->
+              <ellipse cx="349" cy="42" rx="12" ry="37" fill="#0b090e"/>
+              <ellipse cx="350" cy="42" rx="10" ry="32" fill="url(#lensGlass)"/>
+              <ellipse cx="351" cy="42" rx="6" ry="20" fill="none" stroke="#b79cff" stroke-opacity="0.45" stroke-width="1.2"/>
+              <ellipse cx="352" cy="42" rx="3" ry="9" fill="#120826" opacity="0.8"/>
+              <ellipse class="lens-glint" cx="346" cy="26" rx="2.6" ry="7" fill="#ffffff" opacity="0.6"/>
             </svg>
           </a>
           <a class="btn btn-ghost" href="#contact">Book a shoot</a>

@@ -83,9 +83,10 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: 0.01
 .hero h1 span { color: var(--gold); }
 .hero-sub { font-size: clamp(1rem, 2vw, 1.25rem); color: #e4dfea; max-width: 32rem; margin: 1.25rem 0 2rem; }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
-.lens-btn { display: inline-block; width: clamp(240px, 26vw, 320px); line-height: 0; border-radius: 12px; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.45)); transition: transform .25s ease, filter .25s ease; }
+.lens-btn { display: inline-block; width: clamp(260px, 28vw, 340px); line-height: 0; border-radius: 12px; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.45)); transition: transform .25s ease, filter .25s ease; }
 .lens-btn svg { width: 100%; height: auto; overflow: visible; }
-.lens-btn .lens-label { font-family: "Anton", Impact, sans-serif; font-size: 20px; letter-spacing: 2.5px; fill: var(--gold); }
+.lens-btn .lens-label { font-family: "Anton", Impact, sans-serif; font-size: 21px; letter-spacing: 2.5px; fill: var(--gold); }
+.lens-btn .lens-tiny { font: 600 7px "Inter", sans-serif; fill: #d8d4de; letter-spacing: 0.5px; }
 .lens-btn .lens-glint { transition: transform .4s ease, opacity .4s ease; transform-box: fill-box; transform-origin: center; }
 .lens-btn:hover { transform: translateX(6px); filter: drop-shadow(0 10px 22px rgba(123, 63, 228, 0.55)); }
 .lens-btn:hover .lens-glint { transform: translateY(14px); opacity: 0.85; }
