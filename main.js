@@ -19,7 +19,7 @@
   const hero = document.querySelector("[data-hero]");
   if (hero) fillMedia(hero, data.hero, "");
   const about = document.querySelector("[data-about]");
-  if (about) fillMedia(about, data.about, "Byrd's Eye behind the camera");
+  if (about) fillMedia(about, data.about, "Deshaun Frye behind the camera");
 
   // Gallery
   data.gallery.forEach((item, i) => {
